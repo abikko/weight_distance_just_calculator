@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/root_view_default_padding"
+        tools:context=".ui.distance_calculator.DistanceCalculatorFragment">
+
+        <TextView
+            style="@style/BasicDesignTextView.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="@string/welcome_weight_calculator" />
+
+        <EditText
+            android:hint="@string/enter_a_number"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/etNumberWeightCalculator"
+            style="@style/BasicDesignEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_default_height" />
+
+        <TextView
+            style="@style/BasicDesignTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="30dp"
+            android:text="@string/from" />
+
+        <RadioGroup
+            android:id="@+id/rgWeightFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/rbWeightFromKg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/kg" />
+
+            <RadioButton
+                android:id="@+id/rbWeightFromMg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/mg" />
+
+            <RadioButton
+                android:id="@+id/rbWeightFromNg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/Ng" />
+        </RadioGroup>
+
+        <TextView
+
+            android:layout_marginBottom="30dp"
+            style="@style/BasicDesignTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to" />
+
+        <RadioGroup
+            android:id="@+id/rgWeightTo"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/rbWeightToKg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/kg" />
+
+            <RadioButton
+                android:id="@+id/rbWeightToMg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/mg" />
+
+            <RadioButton
+                android:id="@+id/rbWeightToNg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/Ng" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvWeightResult"
+            style="@style/BasicDesignTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0" />
+    </LinearLayout>
+</layout>

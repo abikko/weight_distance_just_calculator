@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_default_height">70dp</dimen>
+    <dimen name="btn_default_text_size">24sp</dimen>
+    <dimen name="btn_small_text_size">16sp</dimen>
+
+    <dimen name="edit_text_default_height">60dp</dimen>
+    <dimen name="root_view_default_padding">30dp</dimen>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/root_view_default_padding"
+        tools:context=".ui.main_calculator.MainCalculatorFragment">
+
+        <TextView
+            style="@style/BasicDesignTextView.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/welcome_main_calculator" />
+
+        <EditText
+            android:id="@+id/etNumberMainCalculator"
+            style="@style/BasicDesignEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_default_height"
+            android:layout_marginBottom="20dp"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnMainCalculatorPlus"
+                style="@style/BasicDesignButton.CalculatorButtons"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_default_height"
+                android:layout_marginHorizontal="30dp"
+                android:layout_weight="1"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/btnMainCalculatorMinus"
+                style="@style/BasicDesignButton.CalculatorButtons"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_default_height"
+                android:layout_marginHorizontal="30dp"
+                android:layout_weight="1"
+                android:text="-" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnMainCalculatorMultiply"
+                style="@style/BasicDesignButton.CalculatorButtons"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_default_height"
+                android:layout_marginHorizontal="30dp"
+                android:layout_weight="1"
+                android:text="*" />
+
+            <Button
+                android:id="@+id/btnMainCalculatorDivide"
+                style="@style/BasicDesignButton.CalculatorButtons"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_default_height"
+                android:layout_marginHorizontal="30dp"
+                android:layout_weight="1"
+                android:text="/" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnMainCalculatorCalculate"
+            style="@style/BasicDesignButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_default_height"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/calculate" />
+    </LinearLayout>
+</layout>

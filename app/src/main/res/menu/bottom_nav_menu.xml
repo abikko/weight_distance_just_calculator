@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/menu_main"
+            android:icon="@drawable/ic_main_24"
+            android:title="@string/main" />
+        <item
+            android:id="@+id/menu_distance"
+            android:icon="@drawable/ic_baseline_linear_scale_24"
+            android:title="@string/distance_calculator" />
+        <item
+            android:id="@+id/menu_weight"
+            android:icon="@drawable/ic_weight_24"
+            android:title="@string/weight_calculator" />
+    </group>
+</menu>
